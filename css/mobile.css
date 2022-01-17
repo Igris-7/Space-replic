@@ -1,0 +1,78 @@
+
+
+@media only screen and (max-width:800px) {
+    
+    /**Header **/
+    .img-header .header-info h2{
+        font-size: 50px;
+    }
+     
+    .img-header .header-info p{
+        font-size: 19px;
+    }
+
+    /**Menú de navegación**/
+
+    .menu{
+        border-bottom: 4px solid rgb(163, 91, 91);
+    }
+
+    .menu .btn-menu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .menu .list-container{
+        position: absolute;
+        top: 66px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 66px);
+        background: #fff;
+    }
+
+    .menu .list-container .lists{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .menu .list-container .lists li{
+        margin: 15px 0px;
+    }
+
+    /**Mission**/
+
+    .mission-info h2{
+        font-size: 30px;
+    }
+
+    .mission-info p{
+        font-size: 17px;
+    }
+
+    .mission .spacey-img{
+        width: 80%;
+    }
+
+    /** Elon Musk **/
+
+    .elon-musk .figure-img h4{
+        font-size: 35px;
+    }
+
+    /** Galeria de imagenes **/
+
+    .gallery-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 350px);
+    }
+
+}

@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+/** Header **/
+
+#header{
+    width: 100%;
+    position: relative;
+}
+
+.img-header{
+    background: url(../images/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: soft-light;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.img-header .header-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+}
+
+.img-header .header-info h2{
+    color: #fff;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.img-header .header-info hr{
+    background: #fff;   
+    width: 20%;
+    border: none;
+    outline: none;
+    height: 2px;
+    margin: 15px 0px;
+}
+
+.img-header .header-info p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*** Menu de navegación ***/
+
+.menu{
+    width: 100%;
+    height: 66px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*border-bottom: 4px solid #6639a6;*/
+    box-shadow: 0px 0px 25px  rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.menu .btn-menu{ 
+    display: none; 
+}
+
+.menu .logo-box{
+     margin-left: 50px; 
+}
+
+.menu .logo-box h1{ 
+    font-weight: normal; 
+    font-size: 30px;
+    color: #000;
+}
+
+.menu .list-container{
+    margin-right: 50px;
+    transition: all 0.5s;
+}
+
+.menu .list-container .lists{
+    display: flex;
+}
+
+.menu .list-container .lists li{
+    list-style: none;
+}
+
+.menu .list-container .lists li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 19px;
+    padding: 7px;
+    margin: 0px 10px;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+
+.menu .list-container .lists li a.active{
+    color: #fff;
+    background: rgb(163, 91, 91);
+    box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.menu .list-container .lists li a:hover{
+    color: #fff;
+    background: rgb(163, 91, 91);
+    box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+/** Main **/
+
+#main{
+    width: 100%;
+}
+
+.mission{
+    width: 100%;
+    padding-top: 50px;
+}
+
+.mission-info{
+    width: 80%;
+    margin: auto;
+}
+
+.mission-info h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    color: #000;
+}
+
+.mission-info p{
+    font-size: 19px;
+    color: #000;
+    line-height: 30px;
+    margin: 30px 0px;
+}
+
+.mission .spacey-img{
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.mission .spacey-img img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transform: rotate(-3deg);
+    cursor: pointer;
+}
+
+
+/** elon musk **/
+.elon-musk{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.elon-musk .figure-img{
+    background: url(../images/elon-musk.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode : soft-light;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.elon-musk .figure-img h4{
+    width: 80%;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 60px;
+}
+
+.skew-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 0px 0px 5vh 100vw;
+    border-color: transparent transparent #fff transparent;
+}
+
+.skew-arriba{
+    position: absolute;
+    top: 0;
+    border-style: solid;
+    border-width: 5vh 100vw 0px 0px;
+    border-color: #fff transparent transparent transparent;
+    z-index: 10;
+}
+
+/** Galeria de imagenes **/
+
+.gallery-section{
+    width: 100%;
+    margin: 80px 0px;
+}
+
+.gallery-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 350px);
+}
+
+.gallery-container .img-card{
+    overflow: hidden;
+}
+
+.gallery-container .img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.gallery-container .img-card:hover img{
+transform: scale(1.5) rotate(10deg);   
+}
+
+/***Galeria modal **/
+
+.modal-gallery{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    z-index: 999999;
+    display: none;
+}
+
+.close-modal{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-gallery .captionModal{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    margin: 20px 0px;
+}
+
+.gallery-list{
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(1, 100px);
+}
+
+.modal-gallery #imgModal{
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    display: block;
+    background-color: #fff;
+    object-fit: cover;
+}
+
+.gallery-list img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.gallery-list img:hover{
+    opacity: 0.5;
+}
+
+/** Botón ir arriba ***/
+
+.go-top{
+    position: fixed;
+    bottom: 30px;
+    right: -100%;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border : 3px solid rgb(163, 91, 91);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.go-top i{
+    font-size: 25px;
+}
+
+/** Footer **/
+
+#footer{
+    width: 100%;
+    height: 70px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer p{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js{
+    width: 100%;
+    height: 100%;
+  }
